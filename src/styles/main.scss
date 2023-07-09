@@ -1,0 +1,32 @@
+@use "hero";
+@use "attractions";
+@use "presence";
+@use "information";
+@use "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: variables.$textColor;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}

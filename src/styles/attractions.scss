@@ -1,0 +1,18 @@
+@use "variables";
+
+.attractions {
+  background-image: linear-gradient(variables.$green, variables.$blue);
+  padding: 2.5rem;
+
+  &__image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: 4px;
+    }
+  }
+}

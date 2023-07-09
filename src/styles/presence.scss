@@ -1,0 +1,40 @@
+@use "./components/button.scss";
+@use "variables";
+
+.presence {
+  background-image: linear-gradient(variables.$blue, variables.$green);
+  padding: 2.5rem;
+
+  &__form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    &__input {
+      outline: none;
+      border: none;
+      border-bottom: 2px solid variables.$textColor;
+      background: transparent;
+      padding: 0.5rem 1.5rem;
+      color: variables.$textColor;
+
+      &::placeholder {
+        color: variables.$textColor;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .presence {
+    &__form {
+      flex-direction: column;
+
+      &__confirm {
+        width: 100%;
+        padding: 0.5rem 0;
+      }
+    }
+  }
+}

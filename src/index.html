@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Aniversário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.scss">
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero__text">Venha comemorar meu aniversário</h1>
+
+      <div class="hero__regressive">
+        <div class="hero__regressive__date">
+          <p id="days"></p>
+          <span>dias</span>
+        </div>
+        <div class="hero__regressive__date">
+          <p id="hours"></p>
+          <span>horas</span>
+        </div>
+        <div class="hero__regressive__date">
+          <p id="minutes"></p>
+          <span>minutos</span>
+        </div>
+        <div class="hero__regressive__date">
+          <p id="seconds"></p>
+          <span>segundos</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="attractions">
+    <div class="container">
+      <h2 class="title">Principais Atrações</h2>
+      <div class="attractions__image">
+        <img src="./images/parque_aquatico.jpg" alt="Parque Aquático">
+        <img src="./images/shows.jpg" alt="Show">
+        <img src="./images/brinquedos.jpg" alt="Brinquedos">
+        <img src="./images/jogos.jpg" alt="Jogos">
+      </div>
+    </div>
+  </section>
+
+  <section class="presence">
+    <div class="container">
+      <h2 class="title">
+        Confirme a sua presença
+      </h2>
+      <form class="presence__form">
+        <input id="input-confirm" class="presence__form__input" type="email" placeholder="Digite seu e-mail" required>
+        <button type="submit" id="btn-confirm" class="button presence__form__confirm">Confirmar</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="information">
+    <div class="container">
+      <h2 class="title">Principais informações</h2>
+      <div class="information__cards">
+        <div class="information__cards__item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Av. Principal, 00</span>
+        </div>
+        <div class="information__cards__item">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>21/04/2024</span>
+        </div>
+        <div class="information__cards__item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>meuaniversario@email.com</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://kit.fontawesome.com/7ab7f79c6e.js" crossorigin="anonymous"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
